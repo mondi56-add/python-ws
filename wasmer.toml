@@ -1,0 +1,19 @@
+[package]
+name = "python-ws-mondi56-add"
+version = "1.0.0"
+
+[[module]]
+name = "app"
+source = "app.py"
+abi = "python"
+
+[module.dependencies]
+python = "3.11"
+
+[[command]]
+name = "script"
+module = "app"
+runner = "https://webc.org/runner/python"
+
+[command.trigger]
+type = "http"
